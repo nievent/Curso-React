@@ -29,7 +29,6 @@ export const EjercicioComponent = ({year}) => {
             type="number" 
             value={yearNow} 
             onChange={(e) => setYear(Number(e.target.value))}
-            placeholder='Cambia el año' 
         />
     </div>
   )
