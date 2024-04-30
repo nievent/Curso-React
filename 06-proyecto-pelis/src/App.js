@@ -15,7 +15,7 @@ function App() {
             <div className="play">
             </div>
         </div>
-        <h1>FORLOPD</h1>
+        <h1>Mis Pelis</h1>
     </header>
     {/* <!-- barra de navegacion --> */}
     <nav className="nav">
