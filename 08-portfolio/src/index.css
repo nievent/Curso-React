@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.layout {
+  width: 85%;
+  margin: 0 auto;
+
+}
+
+.header {
+  display: flex;
+  height: 132px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #9364ec;
+  margin-bottom: 80px;
+
+}
+
+.header .logo {
+  flex-grow: 2;
+  display: flex;
+}
+
+.header .logo span {
+  display: block;
+  font-size: 90px;
+  font-weight: lighter;
+  margin-top: -8px;
+}
+
+.header .logo h3 {
+  display: block;
+  flex-basis: 40px;
+  margin-left: 10px;
+  font-weight: lighter;
+}
+
+.header nav {
+  flex-grow: 1;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  height: 132px;
+}
+
+.header li {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header li:nth-last-child(){
+  margin-right: 0;
+}
+
+.header li a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.header .active,
+.header li a:hover {
+  color: #9364ec;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 80px;
+  padding: 40px 0;
+  border-top: 3px solid #9364ec;
+  background-color: #f2eaff;
+  color: #b996fa;
+}
+
+.content {
+  min-height: 300px;
+}
+
+.home h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+
+.home strong {
+  color: #9364ec;
+}
+
+.home h2 {
+  color: rgb(87, 87, 87);
+  font-weight: lighter;
+}
+
+.btn a {
+  color: #ece1ff;
+  border: 2px solid #ece1ff;
+  text-decoration: none;
+  background-color: #9364ec;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 150px;
+  transform: all 300ms;
+}
+
+.btn a:hover {
+  background-color: #ece1ff;
+  color: #9364ec;
+  border: 2px solid #9364ec;
+}
+
+.page .heading,
+.home .heading {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
+  color: black;
+}
+
+.page .heading {
+  font-size: 55px;
+  font-weight: bold;
+  color: #9364ec;
+}
+
+/* Estilos del currículum */
+/* Estilos del currículum */
+.curriculum {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.curriculum .section {
+  margin-bottom: 20px;
+}
+
+.curriculum summary {
+  cursor: pointer;
+  font-weight: lighter;
+  font-size: 24px;
+  color: #9364ec;
+}
+
+.curriculum ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cursos ul  {
+  list-style-type: disc;
+}
+
+.curriculum ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.curriculum ul li p {
+  margin: 5px 0;
+}
+
+.curriculum ul li p strong {
+  color: #9364ec;
+}
+
+/* Estilos para herramientas */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+/* Estilos para el botón */
+.btn-descargar {
+  background-color: #9364ec;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.btn-descargar:hover {
+  background-color: white;
+  color: #9364ec;
+  border: 2px solid #9364ec;
+}
+
+.page {
+  margin: 20px;
+}
+
+.heading {
+  color: #9364ec;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #9364ec;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+input[type="text"],
+textarea,
+input[type="email"],
+input[type="submit"] {
+  display: block;
+  width: 100%; 
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 10px; 
+  box-sizing: border-box; 
+}
+
+input[type="submit"] {
+  background-color: #9364ec;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #9364ec;
+  border: 2px solid #9364ec;
+}
+
+.trabajos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cambiamos a grid con un tamaño mínimo de 300px y crecimiento automático */
+  gap: 30px; /* Espacio entre las columnas */
+}
+
+.trabajo {
+  /* Eliminamos flex-basis y flex-grow */
+  margin-bottom: 30px; /* Margen inferior para separar los trabajos */
+}
+
+.trabajo .mask {
+  max-height: 400px; /* Establece un tamaño máximo */
+  overflow: hidden;
+  aspect-ratio: 4 / 3; /* Mantén una relación de aspecto de 4:3 */
+  box-shadow: 0px 5px 14px #ccc;
+  position: relative; 
+}
+
+.trabajo .mask img {
+  transition: all 0.3s; /* Aumentamos la transición de la imagen */
+}
+
+.trabajo .mask:hover img {
+  transform: scale(1.05); /* Aumenta el tamaño de la imagen */
+}
+
+
+
+.trabajo img {
+  width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+  height: 100%; /* La imagen ocupa el 100% de la altura del contenedor */
+  object-fit: cover; /* La imagen se ajusta para cubrir todo el contenedor */
+  position: absolute; /* Posicionamos la imagen de forma absoluta dentro del contenedor */
+  top: 0; /* Alineamos la imagen en la parte superior del contenedor */
+  left: 0; /* Alineamos la imagen en la parte izquierda del contenedor */
+}
+
+.tech {
+  font-weight: bold;
+  color: rgb(177, 177, 177);
+  border-top: 1px solid #ccc;
+  display: block;
+  
+}
+
+.proyectImg {
+  height: 400px;
+}
